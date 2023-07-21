@@ -108,6 +108,6 @@ class WallServiceTest {
         WallService.createComment(2, Comment(text = "Second comment for post 2"))
         WallService.createComment(1, Comment(text = "First comment for post 1"))
 
-        WallService.createReportComment(ReportComment(commentId = 2, reason = 10))
+        WallService.createReportComment(ReportComment(commentId = 2, reason = 7))
     }
 }

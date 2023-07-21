@@ -61,7 +61,7 @@ object WallService {
     fun createReportComment(reportComment: ReportComment): Boolean {
         for (comment in comments) {
             if (comment.id == reportComment.commentId) {
-                if (reportComment.reason in 0..8) {
+                if (reportComment.reason in 0..8 && reportComment.reason != 7) {
                     reportComments += reportComment.copy()
                     return true
                 }
